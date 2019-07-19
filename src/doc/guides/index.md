@@ -6,3 +6,6 @@
     - Linux
     - MacOS
     - [Microsoft Windows](./get-docker/docker-ce/microsoft-windows.md)
+- Get Started
+  - Get Started With Docker
+    - [Part 1: Orientation](./get-started/get-started-with-docker/orientation.md)
