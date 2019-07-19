@@ -1,4 +1,8 @@
 - Get Docker
-  - [Overview Of Docker Editions](./01-get-docker/01-overview-of-docker-editions/01.md)
-    - Docker CE
-      - [About Docker CE](./01-get-docker/02-docker-ce/01.md)
+  - [Overview Of Docker Editions](./get-docker/overview-of-docker-editions/overview-of-docker-editions.md)
+  - Docker CE
+    - [About Docker CE](./get-docker/docker-ce/about-docker-ce.md)
+    - Cloud
+    - Linux
+    - MacOS
+    - [Microsoft Windows](./get-docker/docker-ce/microsoft-windows.md)

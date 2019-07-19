@@ -1,6 +1,4 @@
-[https://docs.docker.com/install/](https://docs.docker.com/install/)
-
-# About Docker CE
+# [About Docker CE](https://docs.docker.com/install/)
 
 docker CE 适用于个人开发者和比较小的团队, docker CE 有三个更新频道:
 
