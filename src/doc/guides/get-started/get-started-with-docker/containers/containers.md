@@ -11,3 +11,11 @@
 ## [Define A Container With Dockerfile](https://docs.docker.com/get-started/part2/#define-a-container-with-dockerfile)
 
 我们通过 `Dockerfile` 文件来配置一个 `container`
+
+## [Share Your Image](https://docs.docker.com/get-started/part2/#share-your-image)
+
+如何将一个 `image` 发布到 docker hub 中去?
+
+1. 使用 `docker login` 登录
+2. 使用 `docker tag SOURCE_IMAGE luotaoyeah/repository:tag` 给这个 `image` 打一个标签
+3. 使用 `docker push luotaoyeah/repository:tag` 将这个 `image` 发布到 docker hub 上去
