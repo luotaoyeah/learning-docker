@@ -9,3 +9,4 @@
 - Get Started
   - Get Started With Docker
     - [Part 1: Orientation](./get-started/get-started-with-docker/orientation.md)
+    - [Part 2: Containers](./get-started/get-started-with-docker/containers/containers.md)
