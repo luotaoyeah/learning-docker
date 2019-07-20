@@ -19,3 +19,7 @@
 1. 使用 `docker login` 登录
 2. 使用 `docker tag SOURCE_IMAGE luotaoyeah/repository:tag` 给这个 `image` 打一个标签
 3. 使用 `docker push luotaoyeah/repository:tag` 将这个 `image` 发布到 docker hub 上去
+
+### [Pull And Run The Image From The Remote Repository](https://docs.docker.com/get-started/part2/#pull-and-run-the-image-from-the-remote-repository)
+
+使用命令 `docker run -p 8888:8888 luotaoyeah/get-started:part2` 来运行刚才发布到 docker hub 中的 `image`, 首先会将该 `image` pull 到本地
