@@ -1,4 +1,4 @@
-# [Get Started, Part 3: Services](https://docs.docker.com/get-started/part2/)
+# [Get Started, Part 3: Services](https://docs.docker.com/get-started/part3/)
 
 ## [About Services](https://docs.docker.com/get-started/part3/#about-services)
 

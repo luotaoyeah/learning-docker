@@ -1,0 +1,16 @@
+version: 3.7
+
+services:
+  luotao_web:
+    image: luotaoyeah/get-started:part2
+    deploy:
+      replicas: 5
+      restart_policy:
+        condition: on-failure
+    ports:
+      - '8888:8888'
+    networks:
+      - webnet
+
+networks:
+  webnet:
