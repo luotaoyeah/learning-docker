@@ -23,3 +23,13 @@
 
 1. 修改 `docker-compose.yml` 中 `replicas` 的值
 2. 再次执行命令 `docker stack deploy -c getstartedlab` 来更新这个 stack
+
+### [Take Down The App And The Swarm](https://docs.docker.com/get-started/part3/#take-down-the-app-and-the-swarm)
+
+如何移除一个 stack ?
+
+1. `docker stack rm getstartedlab`
+
+如何关闭一个 swarm ?
+
+1. `docker swarm leave -f`
