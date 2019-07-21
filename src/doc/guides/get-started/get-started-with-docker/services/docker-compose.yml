@@ -4,7 +4,7 @@ services:
   luotao_web:
     image: luotaoyeah/get-started:part2
     deploy:
-      replicas: 5
+      replicas: 7
       restart_policy:
         condition: on-failure
     ports:

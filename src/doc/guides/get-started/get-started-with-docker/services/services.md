@@ -16,3 +16,10 @@
 4. 查看 "getstartedlab" 这个 stack 下的所有 service: `docker stack services getstartedlab`
 5. 查看所有的 services: `docker service ls`
 6. 查看 "getstartedlab_luotao_web" 这个 service 下的所有进程: `docker service ps getstartedlab_luotao_web`
+
+## [Scale The App](https://docs.docker.com/get-started/part3/#scale-the-app)
+
+如何扩展一个应用?
+
+1. 修改 `docker-compose.yml` 中 `replicas` 的值
+2. 再次执行命令 `docker stack deploy -c getstartedlab` 来更新这个 stack
