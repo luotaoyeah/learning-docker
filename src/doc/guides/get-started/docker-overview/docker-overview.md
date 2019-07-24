@@ -37,3 +37,13 @@ docker client 指的就是 docker CLI, docker CLI 对应的命令是 `docker`
 docker CLI 通过 REST API 将命令发送给 docker daemon 执行
 
 一个 docker CLI 可以跟多个 docker daemon 进行交互
+
+### [Docker Registries](https://docs.docker.com/engine/docker-overview/#docker-registries)
+
+docker registry 指的是存放 docker image 的仓库, docker hub 是一个所有人都可以访问的公开的 registry
+
+默认情况下, 当我们执行 `docker pull`, `docker run`, `docker push` 等命令时, 使用的就是 docker hub 这个 registry
+
+docker hub 就类似于 npmjs
+
+除了 docker hub 之外, 我们也可以创建自己的 registry
