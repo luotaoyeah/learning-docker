@@ -12,3 +12,4 @@
     - [Part 2: Containers](./get-started/get-started-with-docker/containers/containers.md)
     - [Part 3: Services](./get-started/get-started-with-docker/services/services.md)
     - [Part 4: Swarm](./get-started/get-started-with-docker/swarms/swarms.md)
+  - [Docker Overview](./get-started/docker-overview/docker-overview.md)
