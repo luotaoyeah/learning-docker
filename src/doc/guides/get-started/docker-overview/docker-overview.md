@@ -69,3 +69,17 @@ container 是 image 的运行实例, 我们可以通过 docker CLI 对 container
 当一个 container 被 remove 时, 它里面的各种状态如果没有被保存到硬盘, 则都会被完全清除
 
 可以将一个 container stop 掉而不是 remove 掉, 这样的话, 就可以再次 start 它
+
+### SERVICES
+
+service 用来对 container 进行扩展, 比如: 配置该 container 同时运行多个副本, 从而组成集群, 实现负载均衡
+
+## [The Underlying Technology](https://docs.docker.com/engine/docker-overview/#the-underlying-technology)
+
+### [Namespaces](https://docs.docker.com/engine/docker-overview/#namespaces)
+
+### [Control Groups](https://docs.docker.com/engine/docker-overview/#control-groups)
+
+### [Union File Systems](https://docs.docker.com/engine/docker-overview/#union-file-systems)
+
+### [Container Format](https://docs.docker.com/engine/docker-overview/#container-format)
