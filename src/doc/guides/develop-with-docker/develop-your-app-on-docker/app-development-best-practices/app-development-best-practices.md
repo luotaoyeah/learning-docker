@@ -33,3 +33,11 @@ keep image small 有两个好处:
 swarm service 的缺点是:
 
 1. 节点之间共享数据会有一些限制
+
+## [Use CI/CD For Testing And Development](https://docs.docker.com/develop/dev-best-practices/#use-cicd-for-testing-and-deployment)
+
+## [Differences In Development And Production Environments](https://docs.docker.com/develop/dev-best-practices/#differences-in-development-and-production-environments)
+
+| Development | Production |
+| ----------- | ---------- |
+| bind mount  | volume     |
