@@ -20,3 +20,16 @@ keep image small 有两个好处:
 1. 使用 `volume` 来存储数据, 而不要使用 `storage drivers`
 2. 在开发环境可以使用 `bind mount`
 3. 在生产环境, 使用 `secret` 来存储敏感数据, 使用 `config` 来存储非敏感数据
+
+## [Use Swarm Services When Possible](https://docs.docker.com/develop/dev-best-practices/#use-swarm-services-when-possible)
+
+尽可能使用 swarm services, 而不要单独使用 container, swarm services 有以下好处:
+
+1. service 的配置文件是声明式的
+2. docker 可以自动重新部署 service container, 而单独使用 container 的话需要手动操作
+3. 有些功能如 secret 和 config 只支持 swarm service
+4. docker 可以帮我们自动 pull 需要拉取的 image
+
+swarm service 的缺点是:
+
+1. 节点之间共享数据会有一些限制
