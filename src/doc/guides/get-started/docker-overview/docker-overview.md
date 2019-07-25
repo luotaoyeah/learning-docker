@@ -59,3 +59,13 @@ image (镜像文件) 是一个静态的文件, 里面包含了 template 和 inst
 创建一个 image 时, 需要创建一个 `Dockerfile` 文件, 它里面包含了一系列的步骤指令, 用来指示如何构建一个 image
 
 `Dockerfile` 里面的每一个指令表示 image 中的一个 layer, 当 `Dockerfile` 发生变更时, 只有变更的 layer 才会重新构建, 其余的 layer 不会受影响
+
+### CONTAINERS
+
+container 是 image 的运行实例, 我们可以通过 docker CLI 对 container 执行各种操作: create/delete/start/stop/move
+
+默认情况下, 各个 container 之间, 以及 container 和 host machine 之间是相互隔离的, 我们可以控制这个隔离程度, 使之可以通过 network 或者磁盘进行交互
+
+当一个 container 被 remove 时, 它里面的各种状态如果没有被保存到硬盘, 则都会被完全清除
+
+可以将一个 container stop 掉而不是 remove 掉, 这样的话, 就可以再次 start 它
