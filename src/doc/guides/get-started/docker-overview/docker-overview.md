@@ -8,7 +8,7 @@
 
 docker engine 是一个 CS 应用, 其中:
 
-1. 有一个 server 称之为 docker daemon
+1. 有一个 server 称之为 docker daemon (dockerd 命令)
 2. 有一个 REST API
 3. 有一个 client, 就是 docker CLI (docker 命令)
 
@@ -47,3 +47,15 @@ docker registry 指的是存放 docker image 的仓库, docker hub 是一个所�
 docker hub 就类似于 npmjs
 
 除了 docker hub 之外, 我们也可以创建自己的 registry
+
+### [Docker Objects](https://docs.docker.com/engine/docker-overview/#docker-objects)
+
+#### IMAGES
+
+image (镜像文件) 是一个静态的文件, 里面包含了 template 和 instructions, 用来指示如何从一个 image 创建一个 container
+
+通常, 一个 image 是基于另外一个 image 的, 在另外一个 image 的基础上, 添加个性化的配置, 从而创建出一个新的 image
+
+创建一个 image 时, 需要创建一个 `Dockerfile` 文件, 它里面包含了一系列的步骤指令, 用来指示如何构建一个 image
+
+`Dockerfile` 里面的每一个指令表示 image 中的一个 layer, 当 `Dockerfile` 发生变更时, 只有变更的 layer 才会重新构建, 其余的 layer 不会受影响
