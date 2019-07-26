@@ -16,7 +16,7 @@ docker 根据 `Dockerfile` 中的指令来构建一个 image, `Dockerfile` 中�
 
 > 实例: app-01
 
-`Dockerfile` 文件地址默认为 `<PATH>/Dockerfile`, 我们也可以通过 `-f some/other/path/Dockerfile` 选项来指定其他的地址
+`Dockerfile` 文件的地址默认为 `<PATH>/Dockerfile`, 我们也可以通过 `-f some/other/path/Dockerfile` 选项来指定其他的地址
 
 > 实例: app-02
 
@@ -25,3 +25,21 @@ docker 根据 `Dockerfile` 中的指令来构建一个 image, `Dockerfile` 中�
 ### [Exclude With `.dockerignore`](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#exclude-with-dockerignore)
 
 类似于 `.gitignore` 文件, 可以使用 `.dockerignore` 文件来排除某些文件
+
+### [Use Multi-Stage Builds](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#use-multi-stage-builds)
+
+### [Don't Install Unnecessary Packages](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#dont-install-unnecessary-packages)
+
+不要安装不必要的包
+
+### [Decouple Applications](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#decouple-applications)
+
+container 应该尽量实现模块化, 职责单一, 相互解耦
+
+container 之间可以通过 `dockers networks` 进行交互
+
+### [Minimize The Number Of Layers](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#minimize-the-number-of-layers)
+
+只有 `RUN`, `COPY`, `ADD` 这三个指令会创建 layer, 其他的指令只会创建一个临时的 image, 而不会增加最后的 image 的尺寸
+
+尽可能使用 multi-stage builds, 并且只拷贝最终需要的文件到 image
