@@ -70,9 +70,29 @@ container 之间可以通过 `dockers networks` 进行交互
 
 ### [RUN](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run)
 
-`RUN` 支持两种语法格式:
+`RUN` 指令用来在构建时期执行命令, 执行的结果会反应到最终的 image 中
+
+一个 `Dockerfile` 中可以包含任意条 `RUN` 指令
+
+支持两种语法格式:
 
 1. shell 格式: `RUN <command>`
 2. exec 格式: `RUN ["exec", "param1", "param2"]`
 
 > [app-05](./app-05)
+
+##3 [CMD](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#cmd)
+
+`CMD` 指令用来在运行时期执行默认命令
+
+一个 `Dockerfile` 中最多只能包含一条 `CMD` 指令, 如果包含多条, 只有最后一条会生效
+
+`CMD` 指令的作用等价于 `docker run [OPTIONS] IMAGE [COMMAND]` 命令中的 `[COMMAND]` 参数, 因此如果 `docker run` 命令中指定了 `[COMMAND]`, 则 `Dockerfile` 中的 `CMD` 指令会被覆盖
+
+支持 3 种语法格式:
+
+1. shell 格式: `CMD <command>`
+2. exec 格式: `CMD ["exec", "param1", "param2"]`
+3. default parameter 格式: `CMD ["param1", "param2"]`, 用来给 `ENTRYPOINT` 指定默认参数
+
+> [app-06](./app-06)
