@@ -43,3 +43,13 @@ container 之间可以通过 `dockers networks` 进行交互
 只有 `RUN`, `COPY`, `ADD` 这三个指令会创建 layer, 其他的指令只会创建一个临时的 image, 而不会增加最后的 image 的尺寸
 
 尽可能使用 multi-stage builds, 并且只拷贝最终需要的文件到 image
+
+### [Sort Multi-Line Arguments](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#sort-multi-line-arguments)
+
+如果一个命令有多个参数, 可以每个参数占一行, 在每个参数后面加上 `<space>\` 来支持多行, 参数应该按照字母顺序排列
+
+### [Leverage Build Cache](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#leverage-build-cache)
+
+默认情况下, docker 在执行每一个指令的时候, 会优先使用缓存, 可以使用 `--no-cache` 选项来禁用缓存
+
+通常, docker 会直接根据 `Dockerfile` 中的指令来判断是否可以使用某个缓存, 但是对于 `ADD` 和 `COPY` 命令, 还会额外判断文件内容来决定是否使用缓存
