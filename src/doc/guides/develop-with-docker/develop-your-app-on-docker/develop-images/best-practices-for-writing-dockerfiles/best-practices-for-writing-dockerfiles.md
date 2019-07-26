@@ -107,4 +107,19 @@ container 之间可以通过 `dockers networks` 进行交互
 
 `ENV` 指令用来设置环境变量
 
+有两种语法格式:
+
+1. `ENV key value`
+2. `ENV key1=value1 key2=value2 ...`
+
+也可以使用 `docker run --env --env-file` 命令的 `--env` 或者 `--env-file` 参数配置环境变量
+
 > [app-08](./app-08)
+
+### [COPY or ADD](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#add-or-copy)
+
+`COPY` 和 `ADD` 功能有一些类似, 大多数情况下应该使用 `COPY`
+
+`ADD` 一般用在需要自动解压本地的 tar 文件时
+
+> [app-09](./app-09)

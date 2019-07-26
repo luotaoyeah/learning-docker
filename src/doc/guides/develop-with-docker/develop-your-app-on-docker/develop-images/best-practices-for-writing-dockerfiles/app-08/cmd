@@ -1,1 +1,4 @@
 docker build -t app:08 . && docker run app:08
+
+# 可以通过 --env 选项配置环境变量
+docker build -t app:08 . && docker run --env foo=FOOO app:08
