@@ -81,7 +81,7 @@ container 之间可以通过 `dockers networks` 进行交互
 
 > [app-05](./app-05)
 
-##3 [CMD](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#cmd)
+### [CMD](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#cmd)
 
 `CMD` 指令用来在运行时期执行默认命令
 
@@ -96,3 +96,9 @@ container 之间可以通过 `dockers networks` 进行交互
 3. default parameter 格式: `CMD ["param1", "param2"]`, 用来给 `ENTRYPOINT` 指定默认参数
 
 > [app-06](./app-06)
+
+### [EXPOSE](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#expose)
+
+`EXPOSE` 指令用来告知 docker 我这个 container 在运行的时候会监听哪个端口, 这样依赖, 用户在运行这个 container 的时候可知道要使用哪个端口
+
+> [app-07](./app-07)

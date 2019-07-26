@@ -1,0 +1,1 @@
+docker build -t app:07 . && docker run -p 8888:8888 app:07
