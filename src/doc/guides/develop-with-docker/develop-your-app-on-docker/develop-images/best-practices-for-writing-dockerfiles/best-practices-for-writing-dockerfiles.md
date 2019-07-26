@@ -67,3 +67,12 @@ container 之间可以通过 `dockers networks` 进行交互
 使用 `LABEL` 指令给 image 添加标签
 
 > [app-04](./app-04)
+
+### [RUN](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run)
+
+`RUN` 支持两种语法格式:
+
+1. shell 格式: `RUN <command>`
+2. exec 格式: `RUN ["exec", "param1", "param2"]`
+
+> [app-05](./app-05)
