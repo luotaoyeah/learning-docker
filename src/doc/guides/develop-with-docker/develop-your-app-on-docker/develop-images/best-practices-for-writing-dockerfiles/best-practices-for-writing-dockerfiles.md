@@ -14,11 +14,11 @@ docker 根据 `Dockerfile` 中的指令来构建一个 image, `Dockerfile` 中�
 
 所谓的 build context 指的就是当前工作目录, 我们在使用 `docker build` 命令时, 其中的 `PATH` 参数就是用来指定工作目录
 
-> 实例: app-01
+> 实例: [app-01](./app-01)
 
 `Dockerfile` 文件的地址默认为 `<PATH>/Dockerfile`, 我们也可以通过 `-f some/other/path/Dockerfile` 选项来指定其他的地址
 
-> 实例: app-02
+> 实例: [app-02](./app-02)
 
 ### [Pipe Dockerfile Through `stdin`](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#pipe-dockerfile-through-stdin)
 
@@ -53,3 +53,11 @@ container 之间可以通过 `dockers networks` 进行交互
 默认情况下, docker 在执行每一个指令的时候, 会优先使用缓存, 可以使用 `--no-cache` 选项来禁用缓存
 
 通常, docker 会直接根据 `Dockerfile` 中的指令来判断是否可以使用某个缓存, 但是对于 `ADD` 和 `COPY` 命令, 还会额外判断文件内容来决定是否使用缓存
+
+## [Dockerfile Instructions](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#dockerfile-instructions)
+
+### [FROM](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#from)
+
+尽可能使用官方提供的 image 作为我们自己的 base image
+
+> 实例: [app-03](./app-03)
