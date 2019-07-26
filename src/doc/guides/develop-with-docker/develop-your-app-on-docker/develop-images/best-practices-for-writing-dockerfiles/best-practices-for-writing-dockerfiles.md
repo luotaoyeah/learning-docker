@@ -99,6 +99,12 @@ container 之间可以通过 `dockers networks` 进行交互
 
 ### [EXPOSE](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#expose)
 
-`EXPOSE` 指令用来告知 docker 我这个 container 在运行的时候会监听哪个端口, 这样依赖, 用户在运行这个 container 的时候可知道要使用哪个端口
+`EXPOSE` 指令用来告知 docker 这个 container 在运行的时候会监听哪个端口, 这样一来, 用户在运行这个 container 的时候可知道要使用哪个端口
 
 > [app-07](./app-07)
+
+### [ENV](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#env)
+
+`ENV` 指令用来设置环境变量
+
+> [app-08](./app-08)
