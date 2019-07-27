@@ -24,3 +24,9 @@
 我们也可以在 `FROM xxx AS <NAME>` 命令中通过 AS 给这个 `stage` 起一个名字, 然后通过这个名字来引用它
 
 > [app-13](./app-13)
+
+## [Stop At A Specific Build Stage](https://docs.docker.com/develop/develop-images/multistage-build/#stop-at-a-specific-build-stage)
+
+`Dockerfile` 文件中可以包含多个 `stage`, 我们可以使用 `docker build` 命令的 `--target` 选项来指定要构建到哪一个 `stage` 为止
+
+> [app-14](./app-14)

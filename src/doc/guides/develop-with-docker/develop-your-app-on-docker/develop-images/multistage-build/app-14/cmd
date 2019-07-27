@@ -1,0 +1,5 @@
+docker build -t app:14 --target stage01 . && docker run app:14
+
+docker build -t app:14 --target stage02 . && docker run app:14
+
+docker build -t app:14 --target stage03 . && docker run app:14
