@@ -133,3 +133,18 @@ container 之间可以通过 `dockers networks` 进行交互
 跟 `CMD` 一样, 一个 `Dockerfile` 文件中最多只能有一个 `ENTRYPOINT` 指令
 
 > [app-10](./app-10)
+
+### [VOLUME](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#volume)
+
+### [USER](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user)
+
+### [WORKDIR](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#workdir)
+
+`WORKDIR` 指令用在 `RUN`, `CMD`, `ENTRYPOINT`, `COPY`, `ADD` 等命令之前, 用来指定这些命令的工作目录
+
+`WORKDIR` 后面的地址, 推荐全部使用绝对路径
+
+对于 `COPY` 指令来说, 它包含两个地址, 一个 source 地址, 一个 destination 地址, 如果 destination 地址是一个相对路径, 则它相对的就是前面的 `WORKDIR` 指定的工作目录,
+而 source 地址相对的是 build context 所指定的目录, 它跟 `WORKDIR` 无关
+
+> [app-11](./app-11)
