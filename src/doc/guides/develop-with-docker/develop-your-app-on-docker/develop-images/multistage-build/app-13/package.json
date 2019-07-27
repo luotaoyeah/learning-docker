@@ -1,0 +1,12 @@
+{
+  "name": "app-13",
+  "version": "0.0.1",
+  "description": "app-12",
+  "private": true,
+  "scripts": {
+    "tsc": "tsc src/index.ts"
+  },
+  "dependencies": {
+    "typescript": "^3.5.3"
+  }
+}

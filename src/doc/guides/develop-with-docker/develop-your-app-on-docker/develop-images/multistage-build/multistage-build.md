@@ -16,3 +16,11 @@
 后面的 `stage` 可以利用前面的 `stage` 中产生的内容, 比如从前面的 `stage` 中复制文件到后面的 `stage` 中去
 
 > [app-12](./app-12)
+
+## [Name Your Build Stages](https://docs.docker.com/develop/develop-images/multistage-build/#name-your-build-stages)
+
+在 `Dockerfile` 中, 每一个 `FROM` 指令表示一个 `stage`, 在 `COPY --from=<index>` 命令中我们可以通过索引来引用某个 `stage`
+
+我们也可以在 `FROM xxx AS <NAME>` 命令中通过 AS 给这个 `stage` 起一个名字, 然后通过这个名字来引用它
+
+> [app-13](./app-13)

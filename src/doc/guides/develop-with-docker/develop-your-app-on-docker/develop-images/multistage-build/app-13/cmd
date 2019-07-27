@@ -1,0 +1,1 @@
+docker build -t app:13 . && docker run app:13
