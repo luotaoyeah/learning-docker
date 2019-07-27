@@ -1,0 +1,8 @@
+# 等价于 node --version
+docker build -t app:10 . && docker run app:10
+
+# 等价于 node --help
+docker build -t app:10 . && docker run app:10 --help
+
+# 等价于 node -e "console.log('HELLO')"
+docker build -t app:10 . && docker run app:10 -e "console.log('HELLO')"

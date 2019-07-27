@@ -123,3 +123,13 @@ container 之间可以通过 `dockers networks` 进行交互
 `ADD` 一般用在需要自动解压本地的 tar 文件时
 
 > [app-09](./app-09)
+
+### [ENTRYPOINT](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#entrypoint)
+
+`ENTRYPOINT` 用来设置该 container 的主命令, 用来将一个 container 当成一个可执行应用(executable)来使用
+
+使用 `ENTRYPOINT` 的同时可以使用 `CMD` 来设置 `ENTRYPOINT` 的默认参数
+
+跟 `CMD` 一样, 一个 `Dockerfile` 文件中最多只能有一个 `ENTRYPOINT` 指令
+
+> [app-10](./app-10)
