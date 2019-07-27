@@ -19,3 +19,4 @@
     - [Docker Development Best Practices](./develop-with-docker/develop-your-app-on-docker/app-development-best-practices/app-development-best-practices.md)
     - Develop Image
       - [Best Practices For Writing Dockerfiles](./develop-with-docker/develop-your-app-on-docker/develop-images/best-practices-for-writing-dockerfiles/best-practices-for-writing-dockerfiles.md)
+      - [Create A Base Image](./develop-with-docker/develop-your-app-on-docker/develop-images/create-a-base-image/create-a-base-image.md)

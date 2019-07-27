@@ -142,9 +142,13 @@ container 之间可以通过 `dockers networks` 进行交互
 
 `WORKDIR` 指令用在 `RUN`, `CMD`, `ENTRYPOINT`, `COPY`, `ADD` 等命令之前, 用来指定这些命令的工作目录
 
+`WORKDIR` 指定的是 container 容器中的目录, 注意区分它跟 build context 的区别
+
 `WORKDIR` 后面的地址, 推荐全部使用绝对路径
 
 对于 `COPY` 指令来说, 它包含两个地址, 一个 source 地址, 一个 destination 地址, 如果 destination 地址是一个相对路径, 则它相对的就是前面的 `WORKDIR` 指定的工作目录,
 而 source 地址相对的是 build context 所指定的目录, 它跟 `WORKDIR` 无关
 
 > [app-11](./app-11)
+
+### [ONBUILD](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#onbuild)
