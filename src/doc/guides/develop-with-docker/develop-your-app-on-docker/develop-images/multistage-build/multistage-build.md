@@ -30,3 +30,9 @@
 `Dockerfile` 文件中可以包含多个 `stage`, 我们可以使用 `docker build` 命令的 `--target` 选项来指定要构建到哪一个 `stage` 为止
 
 > [app-14](./app-14)
+
+## [Use An External Image As A Stage](https://docs.docker.com/develop/develop-images/multistage-build/#use-an-external-image-as-a-stage)
+
+`COPY --from` 中 from 后面的值, 除了可以是当前 `Dockerfile` 中其他的 `stage`, 也可以是一个外部的任意的 image
+
+> [app-15](./app-15)
