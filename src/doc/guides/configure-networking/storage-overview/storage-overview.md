@@ -34,3 +34,25 @@
 `--volume` 可以用来挂载 volumes 和 bind mounts, `--tmpfs` 可以用来挂载 tmpfs mounts
 
 新版本的 `--mount` 可以用来挂载 volumes, bind mounts, tmpfs mounts, 推荐使用
+
+## [Good Use Cases For Volumes](https://docs.docker.com/storage/#good-use-cases-for-volumes)
+
+`volumes` 的一些使用场景:
+
+1. 多个 container 需要共享一个 volume 的时候
+
+   停止或者删除某个 container 的时候, 对应的 volume 不会被删除, volume 需要手动删除
+
+2. 当 container 中的数据需要存储到远程机器或者云上时
+
+3. 当需要在多个 host machine 之间传输(备份/恢复/迁移)数据时
+
+## [Good Use Cases For Bind Mounts](https://docs.docker.com/storage/#good-use-cases-for-bind-mounts)
+
+1. 从 host machine 共享一些配置文件给 container
+
+2. 从 host machine 共享一些源码或者构件给 container, 这样一来, 在 host machine 中修改了文件之后, 在 container 中可以直接读取到这些修改
+
+## [Good Use Cases For `tmpfs` Mounts](https://docs.docker.com/storage/#good-use-cases-for-tmpfs-mounts)
+
+当某些数据不需要(或者不应该)存储在 host machine 或者 container 中时, 就可以使用 tmpfs mounts 将数据存储到内存中去
