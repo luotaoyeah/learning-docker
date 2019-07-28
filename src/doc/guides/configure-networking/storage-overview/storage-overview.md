@@ -56,3 +56,11 @@
 ## [Good Use Cases For `tmpfs` Mounts](https://docs.docker.com/storage/#good-use-cases-for-tmpfs-mounts)
 
 当某些数据不需要(或者不应该)存储在 host machine 或者 container 中时, 就可以使用 tmpfs mounts 将数据存储到内存中去
+
+## [Tips For Using Bind Mounts Or Volumes](https://docs.docker.com/storage/#tips-for-using-bind-mounts-or-volumes)
+
+当挂载给 container 的 volume 不存在时, 一个空的 volume 会自动被创建
+
+当挂载的 volume 所对应的 container 中的目录中存在其他文件时, 如果这个 volume **是**空的, 那么这些文件会被复制到该 volume 中去
+
+当挂载的 volume 所对应的 container 中的目录中存在其他文件时, 如果这个 volume **不是**空的, 那么这些文件会被遮盖, 暂时不能够被读写, 直到解除挂载
