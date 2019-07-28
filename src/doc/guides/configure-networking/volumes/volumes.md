@@ -36,3 +36,28 @@ volumes 是由 docker 来创建和管理的, 而 bind mounts 是依赖于 host m
 4. 删除一个 volume:
 
    `docker volume rm vol01`
+
+## [Start A Container With A Volume](https://docs.docker.com/storage/volumes/#start-a-container-with-a-volume)
+
+如果启动一个 container 时它所挂载的 volume 尚不存在, 则该 volume 会自动被创建
+
+1. 启动一个 container:
+
+   `docker run --name devtest --detach --mount source=vol02,target=/app nginx:latest`
+
+2. 检查该 container 的挂载情况:
+
+   `docker inspect devtest`  
+   `docker volume inspect vol02`
+
+3. 停止该 container:
+
+   `docker container stop devtest`
+
+4. 删除该 container:
+
+   `docker container rm devtest`
+
+5. 删除该 volume:
+
+   `docker volume rm vol02`
