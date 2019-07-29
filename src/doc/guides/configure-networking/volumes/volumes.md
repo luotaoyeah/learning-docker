@@ -89,3 +89,7 @@ volume 默认的读写权限为 read&write, 可以通过 `readonly` 选项创建
 `docker run --detach --name nginxtest --mount source=nginx-vol,target=/app,readonly nginx:latest`
 
 通过 `docker container inspect nginxtest` 检查 container 的状态, 可以看到 `"RW": false`
+
+## [Share Data Among Machines](https://docs.docker.com/storage/volumes/#share-data-among-machines)
+
+可以通过 volume driver 来实现将数据存储在不同的地方, 默认的 volume driver 为 `local`, 即将 volume 数据存储在本地
