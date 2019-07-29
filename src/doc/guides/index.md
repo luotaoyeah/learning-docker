@@ -29,3 +29,4 @@
 - Manage Application Data
   - [Storage Overview](./configure-networking/storage-overview/storage-overview.md)
   - [Volumes](./configure-networking/volumes/volumes.md)
+  - [Bind Mounts](./configure-networking/bind-mounts/bind-mounts.md)
