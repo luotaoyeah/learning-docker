@@ -75,3 +75,9 @@ volumes 是由 docker 来创建和管理的, 而 bind mounts 是依赖于 host m
 3. 删除该 service:
 
    `docker service vm devtest-service`
+
+### [Populate A Volume Using A Container](https://docs.docker.com/storage/volumes/#populate-a-volume-using-a-container)
+
+在挂载一个 volume 的时候, 如果这个 volume 是空的, 并且目标挂载点中已经存在文件, 则这些文件会被复制到 volume 中去
+
+`docker run --detach --name nginxtest --mount source=nginx-vol,target=/etc/share/nginx/html nginx:latest`
