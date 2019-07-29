@@ -93,3 +93,13 @@ volume 默认的读写权限为 read&write, 可以通过 `readonly` 选项创建
 ## [Share Data Among Machines](https://docs.docker.com/storage/volumes/#share-data-among-machines)
 
 可以通过 volume driver 来实现将数据存储在不同的地方, 默认的 volume driver 为 `local`, 即将 volume 数据存储在本地
+
+## TODO [Use A Volume Driver](https://docs.docker.com/storage/volumes/#use-a-volume-driver)
+
+## [Backup Restore Or Migrate Data Volumes](https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes)
+
+### [Backup A Container](https://docs.docker.com/storage/volumes/#backup-a-container)
+
+由于多个 container 可以共用同一个 volume, 因此我们可以使用一个新的 container 专门用来备份, 让它跟需要备份的 container 共用一个 volume
+
+> [app-16](./app-16)

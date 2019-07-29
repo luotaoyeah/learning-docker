@@ -1,0 +1,9 @@
+docker build -t app:16 . && docker run --name dbstore -v dbdata:/app app:16
+
+# 首先使用 --volumes-from dbstore 将 dbstore 中的 volume 挂载到当前 container 上来
+# 然后使用 -v %cd%:/backup 将 host machine 的当前目录挂载到当前 container 的 /backup 的当前目录挂载到当前
+#   此处使用的是 bind mounts
+# 最后使用 tar cvf /backup/backup.tar /app 将 /app 目录打包到 /backup/backup.tar 这个压缩文件中去
+#   其中 /app 目录是位于 volume 中, /backup 目录是位于 bind mounts 中
+
+docker run --rm --volumes-from dbstore -v %cd%:/backup ubuntu tar cvf /backup/backup.tar /app
