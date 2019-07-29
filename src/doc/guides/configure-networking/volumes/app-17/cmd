@@ -1,0 +1,11 @@
+# 创建并运行一个新的 container
+# container name 为 dbstore2
+# volume mount 为: (anonymous):/dbdata
+
+docker run -v /dbdata --name dbstore2 ubuntu /bin/bash
+
+# 使用 --volumes-from dbstore2 将 dbstore2 的 volume 挂载上来
+# 使用 -v %cd%:/backup 将本地的当前目录挂载到 /backup 目录
+# 此时当前 container 的 /dbdata 目录对应的是 volume mount, /backup 目录对应的是 bind mount
+
+docker run --rm --volumes-from dbstore2 -v %cd%:/backup ubuntu bash -c "cd /dbdata && tar xvf /backup/backup.tar --strip 1"

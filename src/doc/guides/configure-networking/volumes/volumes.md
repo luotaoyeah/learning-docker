@@ -11,9 +11,15 @@ volumes 是由 docker 来创建和管理的, 而 bind mounts 是依赖于 host m
 
 ## [Choose The `-v` Or `--mount` Flag](https://docs.docker.com/storage/volumes/#choose-the--v-or---mount-flag)
 
-最开始的时候, `-v | --volume` 使用在 standalone container 中的, 而 `--mount` 是用在 swarm service 中的, 但是从 docker 17.06 之后, `--mount` 也可以用在 standalone container 中
+最开始的时候, `-v | --volume` 是用在 standalone container 中的, 而 `--mount` 是用在 swarm service 中的, 但是从 docker 17.06 之后, `--mount` 也可以用在 standalone container 中
 
 如果需要配置 volume driver option, 则必须使用 `--mount`
+
+`-v` 的参数值包含三部分:
+
+1. 第一部分: volume name, 如果是 anonymous volume, 则第一部分会被忽略
+2. 第二部分: 挂载到 container 中的目标目录
+3. 第三部分: 可选, 逗号分隔的配置选项
 
 推荐使用 `--mount`
 
@@ -103,3 +109,9 @@ volume 默认的读写权限为 read&write, 可以通过 `readonly` 选项创建
 由于多个 container 可以共用同一个 volume, 因此我们可以使用一个新的 container 专门用来备份, 让它跟需要备份的 container 共用一个 volume
 
 > [app-16](./app-16)
+
+### [Restore Container From Backup](https://docs.docker.com/storage/volumes/#restore-container-from-backup)
+
+同样的原理, 可以将备份的数据再还原回去
+
+> [app-17](./app-17)
