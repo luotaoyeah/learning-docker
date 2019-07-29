@@ -29,3 +29,13 @@ bind mount 类似于一个目录映射, 将 host machine 硬盘上的某个目�
 ```
 docker run -d -i -t --name devtest --mount type=bind,source=%cd%,target=/app nginx:latest
 ```
+
+### [Mount Into A Non-Empty Directory On The Container](https://docs.docker.com/storage/bind-mounts/#mount-into-a-non-empty-directory-on-the-container)
+
+对于 volume 来说, 如果 volume 是空的, 并且 container 的目录中已经存在文件, 则这些文件会被复制到 volume 中去
+
+对于 volume 来说, 如果 volume 不是空的, 并且 container 的目录中已经存在文件, 则这些文件会暂时不可访问(obscured)
+
+对于 bind mount 来说, 无论本地目录是否是空的, 如果 container 的目录中已经存在文件, 则这些文件都会暂时不可访问(obscured)
+
+> [app-18](./app-18)

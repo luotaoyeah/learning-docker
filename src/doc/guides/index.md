@@ -27,6 +27,6 @@
     - TODO [Docker App Examples](./develop-with-docker/develop-your-app-on-docker/docker-app-examples/docker-app-examples.md)
 - TODO Configure Networking
 - Manage Application Data
-  - [Storage Overview](./configure-networking/storage-overview/storage-overview.md)
-  - [Volumes](./configure-networking/volumes/volumes.md)
-  - [Bind Mounts](./configure-networking/bind-mounts/bind-mounts.md)
+  - [Storage Overview](./manage-application-data/storage-overview/storage-overview.md)
+  - [Volumes](./manage-application-data/volumes/volumes.md)
+  - [Bind Mounts](./manage-application-data/bind-mounts/bind-mounts.md)

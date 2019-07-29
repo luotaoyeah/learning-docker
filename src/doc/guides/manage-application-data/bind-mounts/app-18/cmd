@@ -1,0 +1,3 @@
+# bind mount 挂载的 container 中的 /app 文件夹中已经存在文件, 因此挂载之后, 这些文件会被隐藏
+
+docker build -t app:18 . && docker run -v D:/proj/git/luotaoyeah/learning-docker/src/doc/guides/manage-application-data/bind-mounts:/app --name app-18 app:18
