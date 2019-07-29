@@ -23,3 +23,9 @@ bind mount 类似于一个目录映射, 将 host machine 硬盘上的某个目�
 
 1. 使用 `-v` 来创建 bind mount 时, 会自动创建这个目录
 2. 使用 `--mount` 来创建 bind mount 时, 会抛出一个错误
+
+## [Start A Container With A Bind Mount](https://docs.docker.com/storage/bind-mounts/#start-a-container-with-a-bind-mount)
+
+```
+docker run -d -i -t --name devtest --mount type=bind,source=%cd%,target=/app nginx:latest
+```
