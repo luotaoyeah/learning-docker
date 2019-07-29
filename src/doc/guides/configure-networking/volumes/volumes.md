@@ -115,3 +115,19 @@ volume 默认的读写权限为 read&write, 可以通过 `readonly` 选项创建
 同样的原理, 可以将备份的数据再还原回去
 
 > [app-17](./app-17)
+
+## [Remove Volumes](https://docs.docker.com/storage/volumes/#remove-volumes)
+
+对于有名称的 volume, 需要手动删除
+
+### [Remove Anonymous Volumes](https://docs.docker.com/storage/volumes/#remove-anonymous-volumes)
+
+对于匿名的 volume, 可以使用 `--rm` 选项使得在删除 container 的时候自动删除对应的匿名 volume
+
+如下, 当 container 被删除时, 匿名的 /app 会被删除, 有名称的 bar 不会被删除:
+
+`docker run --rm -v /foo -v bar:/bar busybox top`
+
+### [Remove All Volumes](https://docs.docker.com/storage/volumes/#remove-all-volumes)
+
+使用 `docker volume prune` 来删除所有未被使用的 volumes
