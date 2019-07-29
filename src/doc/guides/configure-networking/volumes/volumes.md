@@ -61,3 +61,17 @@ volumes 是由 docker 来创建和管理的, 而 bind mounts 是依赖于 host m
 5. 删除该 volume:
 
    `docker volume rm vol02`
+
+### [Start A Service With Volumes](https://docs.docker.com/storage/volumes/#start-a-service-with-volumes)
+
+1. 创建一个 service:
+
+   `docker service create --replicas 3 --detach --name devtest-service --mount source=vol02,target=/app nginx:latest`
+
+2. 检查 service:
+
+   `docker service ps devtest-service`
+
+3. 删除该 service:
+
+   `docker service vm devtest-service`
