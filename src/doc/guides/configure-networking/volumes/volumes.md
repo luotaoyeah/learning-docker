@@ -81,3 +81,11 @@ volumes 是由 docker 来创建和管理的, 而 bind mounts 是依赖于 host m
 在挂载一个 volume 的时候, 如果这个 volume 是空的, 并且目标挂载点中已经存在文件, 则这些文件会被复制到 volume 中去
 
 `docker run --detach --name nginxtest --mount source=nginx-vol,target=/etc/share/nginx/html nginx:latest`
+
+## [Use A Readonly Volume](https://docs.docker.com/storage/volumes/#use-a-read-only-volume)
+
+volume 默认的读写权限为 read&write, 可以通过 `readonly` 选项创建一个 readonly 的 volume
+
+`docker run --detach --name nginxtest --mount source=nginx-vol,target=/app,readonly nginx:latest`
+
+通过 `docker container inspect nginxtest` 检查 container 的状态, 可以看到 `"RW": false`
