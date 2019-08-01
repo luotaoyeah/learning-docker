@@ -45,3 +45,5 @@ docker run -d -i -t --name devtest --mount type=bind,source=%cd%,target=/app ngi
 如果要将 bind mount 设置未只读, 对于 `--mount` 要设置 `readonly`, 对于 `-v` 要设置 `ro`
 
 > [app-19](./app-19)
+
+## TODO [Configure Bind Propagation](https://docs.docker.com/storage/bind-mounts/#configure-bind-propagation)
