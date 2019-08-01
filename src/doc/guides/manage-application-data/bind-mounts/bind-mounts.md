@@ -39,3 +39,9 @@ docker run -d -i -t --name devtest --mount type=bind,source=%cd%,target=/app ngi
 对于 bind mount 来说, 无论本地目录是否是空的, 如果 container 的目录中已经存在文件, 则这些文件都会暂时不可访问(obscured)
 
 > [app-18](./app-18)
+
+## [Use A Read-Only Bind Mount](https://docs.docker.com/storage/bind-mounts/#use-a-read-only-bind-mount)
+
+如果要将 bind mount 设置未只读, 对于 `--mount` 要设置 `readonly`, 对于 `-v` 要设置 `ro`
+
+> [app-19](./app-19)
