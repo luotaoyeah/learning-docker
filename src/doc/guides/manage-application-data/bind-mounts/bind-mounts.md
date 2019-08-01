@@ -47,3 +47,5 @@ docker run -d -i -t --name devtest --mount type=bind,source=%cd%,target=/app ngi
 > [app-19](./app-19)
 
 ## TODO [Configure Bind Propagation](https://docs.docker.com/storage/bind-mounts/#configure-bind-propagation)
+
+## TODO [Configure The `selinux` Label](https://docs.docker.com/storage/bind-mounts/#configure-the-selinux-label)
