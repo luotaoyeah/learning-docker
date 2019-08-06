@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30351a41-0195-4ee6-80b9-71d6c8ea5ee2" name="Default Changelist" comment="feat(product-manual.docker-compose): getting-started: create a `Dockerfile`">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/learning-docker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/app_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package.json" afterDir="false" />
+    <list default="true" id="30351a41-0195-4ee6-80b9-71d6c8ea5ee2" name="Default Changelist" comment="chore: commit .idea folder">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/docker_compose_app_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/getting-started.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/getting-started.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.app-20">
+  <component name="RunManager" selected="Docker.docker-compose.app-20">
     <configuration name="app-15/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="docker">
       <deployment type="dockerfile">
         <settings>
@@ -144,6 +131,7 @@
     </configuration>
     <list>
       <item itemvalue="Docker.app-20" />
+      <item itemvalue="Docker.docker-compose.app-20" />
       <item itemvalue="Docker.app-15/Dockerfile" />
       <item itemvalue="Docker.app-16/Dockerfile" />
       <item itemvalue="Docker.app-18/Dockerfile" />
@@ -151,11 +139,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.app-20" />
         <item itemvalue="Docker.app-20" />
         <item itemvalue="npm.tsc" />
         <item itemvalue="Docker.app-18/Dockerfile" />
         <item itemvalue="Docker.app-18/Dockerfile" />
-        <item itemvalue="Docker.app-16/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -171,12 +159,18 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38bd2761" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@15e97444" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4f0359d6" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38bd2761" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@32810481" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4f0359d6" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@db81dbd" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38bd2761" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5c4fd152" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -206,21 +200,7 @@
       <workItem from="1564823990054" duration="6466000" />
       <workItem from="1564886930109" duration="1511000" />
       <workItem from="1564993714092" duration="8385000" />
-      <workItem from="1565001682552" duration="2999000" />
-    </task>
-    <task id="LOCAL-00033" summary="feat(guide.develop-with-docker): RUN">
-      <created>1564108900470</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1564108900470</updated>
-    </task>
-    <task id="LOCAL-00034" summary="feat(guide.develop-with-docker): CMD">
-      <created>1564113077045</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1564113077045</updated>
+      <workItem from="1565001682552" duration="3820000" />
     </task>
     <task id="LOCAL-00035" summary="feat(guide.develop-with-docker): EXPOSE">
       <created>1564114843667</created>
@@ -551,7 +531,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565087837751</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="feat(product-manual.docker-compose): getting-started: create a `Dockerfile`">
+      <created>1565088509364</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1565088509364</updated>
+    </task>
+    <task id="LOCAL-00083" summary="chore: commit .idea folder">
+      <created>1565088531729</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1565088531729</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,8 +572,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="feat(guide.manage-application-data): `docker volume`" />
-    <MESSAGE value="feat(guide.manage-application-data): start a container with a volume" />
     <MESSAGE value="feat(guide.manage-application-data): start a service with volumes" />
     <MESSAGE value="feat(guide.manage-application-data): populate a volume using a container" />
     <MESSAGE value="feat(guide.manage-application-data): use a readonly volume" />
@@ -603,7 +595,9 @@
     <MESSAGE value="feat(product-manual.docker-compose): variables" />
     <MESSAGE value="feat(product-manual.docker-compose): install docker compose" />
     <MESSAGE value="feat(product-manual.docker-compose): getting-started: setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(product-manual.docker-compose): getting-started: setup" />
+    <MESSAGE value="feat(product-manual.docker-compose): getting-started: create a `Dockerfile`" />
+    <MESSAGE value="chore: commit .idea folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: commit .idea folder" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="masterDetails">
