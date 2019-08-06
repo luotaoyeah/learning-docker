@@ -1,3 +1,4 @@
 - Docker Compose
-  - [Overview Of Docker Compose](./overview-of-docker-compose/overview-of-docker-compose.md)
-  - [Install Compose](./install-compose/install-compose.md)
+  - [Overview Of Docker Compose](./docker-compose/overview-of-docker-compose/overview-of-docker-compose.md)
+  - [Install Compose](./docker-compose/install-compose/install-compose.md)
+  - [Getting Started](./docker-compose/getting-started/getting-started.md)
