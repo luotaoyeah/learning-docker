@@ -31,3 +31,5 @@
 4. `--build` 表示在运行 container 之前先构建 image
 
 `docker-compose -f D:\proj\git\luotaoyeah\learning-docker\src\doc\product-manuals\docker-compose\getting-started\app-20\docker-compose.yml up -d --build`
+
+## [Step 5: Edit The Compose File To Add A Bind Mount](https://docs.docker.com/compose/gettingstarted/#step-5-edit-the-compose-file-to-add-a-bind-mount)

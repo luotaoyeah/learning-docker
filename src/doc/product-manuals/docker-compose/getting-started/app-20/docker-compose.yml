@@ -9,3 +9,9 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - 8888:80
+    # volumes 用来定义 bind mounts
+    volumes:
+      - .:/app/foo
+    # environment 用来定义环境变量
+    environment:
+      - ENV_FOO=foo
