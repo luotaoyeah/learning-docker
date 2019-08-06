@@ -1,0 +1,24 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="app-20" type="docker-deploy" factoryName="dockerfile" server-name="docker">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="buildCliOptions" value="" />
+        <option name="command" value="" />
+        <option name="containerName" value="app-20" />
+        <option name="entrypoint" value="" />
+        <option name="imageTag" value="app-20" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="80" />
+              <option name="hostPort" value="8888" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="commandLineOptions" value="" />
+        <option name="sourceFilePath" value="src/doc/product-manuals/docker-compose/getting-started/app-20/Dockerfile" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30351a41-0195-4ee6-80b9-71d6c8ea5ee2" name="Default Changelist" comment="feat(product-manual.docker-compose): getting-started: create a `Dockerfile`">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/learning-docker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/app_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/getting-started.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/getting-started.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1OPRkSpfqD7ANa3mV2aPswkPWgc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON&#10;CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Program Files\nodejs\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="ts.external.directory.path" value="D:\proj\git\luotaoyeah\learning-docker\src\doc\guides\develop-with-docker\develop-your-app-on-docker\develop-images\multistage-build\app-12\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\product-manuals\docker-compose\getting-started\app-20" />
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\product-manuals\get-started" />
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\product-manuals" />
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\guides\manage-application-data\bind-mounts" />
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\guides\configure-networking\bind-mounts\app-18" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\product-manuals\docker-compose" />
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\guides\configure-networking\networking-tutorials\bridge-network-tutorial" />
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\guides\manage-application-data" />
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\guides\develop-with-docker\develop-your-app-on-docker\develop-images\best-practices-for-writing-dockerfiles\app-02\dockerfiles" />
+      <recent name="D:\proj\git\luotaoyeah\learning-docker\src\doc\guides\develop-with-docker\develop-your-app-on-docker\develop-images\best-practices-for-writing-dockerfiles\app-02\context" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.app-20">
+    <configuration name="app-15/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="app:15" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="src/doc/guides/develop-with-docker/develop-your-app-on-docker/develop-images/multistage-build/app-15/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="app-16/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="dbstore" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="app:16" />
+          <option name="commandLineOptions" value="--volume dbdata:/app" />
+          <option name="sourceFilePath" value="src/doc/guides/configure-networking/volumes/app-16/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="app-18/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="app-18" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="app:18" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="src/doc/guides/manage-application-data/bind-mounts/app-18/Dockerfile" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/app" />
+                <option name="hostPath" value="$PROJECT_DIR$/src/doc/guides/manage-application-data/bind-mounts" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="tsc" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="tsc" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.app-20" />
+      <item itemvalue="Docker.app-15/Dockerfile" />
+      <item itemvalue="Docker.app-16/Dockerfile" />
+      <item itemvalue="Docker.app-18/Dockerfile" />
+      <item itemvalue="npm.tsc" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.app-20" />
+        <item itemvalue="npm.tsc" />
+        <item itemvalue="Docker.app-18/Dockerfile" />
+        <item itemvalue="Docker.app-18/Dockerfile" />
+        <item itemvalue="Docker.app-16/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38bd2761" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38bd2761" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@15e97444" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@38bd2761" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@32810481" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30351a41-0195-4ee6-80b9-71d6c8ea5ee2" name="Default Changelist" comment="" />
+      <created>1563279757630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563279757630</updated>
+      <workItem from="1563279760537" duration="5282000" />
+      <workItem from="1563285284028" duration="513000" />
+      <workItem from="1563339970630" duration="1295000" />
+      <workItem from="1563519942409" duration="8704000" />
+      <workItem from="1563594507531" duration="18458000" />
+      <workItem from="1563877393242" duration="2562000" />
+      <workItem from="1563966992283" duration="3028000" />
+      <workItem from="1563970940078" duration="4607000" />
+      <workItem from="1564021170212" duration="77604000" />
+      <workItem from="1564823990054" duration="6466000" />
+      <workItem from="1564886930109" duration="1511000" />
+      <workItem from="1564993714092" duration="8385000" />
+      <workItem from="1565001682552" duration="2999000" />
+    </task>
+    <task id="LOCAL-00033" summary="feat(guide.develop-with-docker): RUN">
+      <created>1564108900470</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1564108900470</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat(guide.develop-with-docker): CMD">
+      <created>1564113077045</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1564113077045</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat(guide.develop-with-docker): EXPOSE">
+      <created>1564114843667</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1564114843667</updated>
+    </task>
+    <task id="LOCAL-00036" summary="feat(guide.develop-with-docker): ENV">
+      <created>1564118267271</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1564118267271</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat(guide.develop-with-docker): COPY">
+      <created>1564119744880</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1564119744880</updated>
+    </task>
+    <task id="LOCAL-00038" summary="feat(guide.develop-with-docker): ENTRYPOINT">
+      <created>1564187957107</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1564187957107</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat(guide.develop-with-docker): WORKDIR">
+      <created>1564189464634</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1564189464634</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat(guide.develop-with-docker): parent image &amp; base image">
+      <created>1564190501561</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1564190501561</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat(guide.develop-with-docker): FROM scratch">
+      <created>1564191557741</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1564191557741</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat(guide.develop-with-docker): docker build enhancements for 18.09">
+      <created>1564192332192</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1564192332192</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat(guide.develop-with-docker): before multi-stage builds">
+      <created>1564193564116</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1564193564116</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat(guide.develop-with-docker): use multi-stage builds">
+      <created>1564195245280</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1564195245280</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat(guide.develop-with-docker): FROM ... AS ...">
+      <created>1564213570025</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1564213570025</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat(guide.develop-with-docker): --target">
+      <created>1564217213782</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1564217213782</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat(guide.develop-with-docker): --from">
+      <created>1564221714648</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1564221714648</updated>
+    </task>
+    <task id="LOCAL-00048" summary="feat(guide.develop-with-docker): Dockerfile reference">
+      <created>1564272510366</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1564272510366</updated>
+    </task>
+    <task id="LOCAL-00049" summary="feat(guide.develop-with-docker): manage images">
+      <created>1564273547589</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1564273547589</updated>
+    </task>
+    <task id="LOCAL-00050" summary="feat(guide.develop-with-docker): docker app examples">
+      <created>1564273810329</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1564273810329</updated>
+    </task>
+    <task id="LOCAL-00051" summary="feat(guide.manage-application-data): overview: volume">
+      <created>1564274943063</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1564274943064</updated>
+    </task>
+    <task id="LOCAL-00052" summary="feat(guide.manage-application-data): overview: bind mounts">
+      <created>1564277221717</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1564277221717</updated>
+    </task>
+    <task id="LOCAL-00053" summary="feat(guide.manage-application-data): overview: good use cases">
+      <created>1564283345752</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1564283345753</updated>
+    </task>
+    <task id="LOCAL-00054" summary="feat(guide.manage-application-data): overview: tips">
+      <created>1564283729091</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1564283729091</updated>
+    </task>
+    <task id="LOCAL-00055" summary="feat(guide.manage-application-data): use volumes">
+      <created>1564284354279</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1564284354279</updated>
+    </task>
+    <task id="LOCAL-00056" summary="feat(guide.manage-application-data): `docker volume`">
+      <created>1564286472103</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1564286472103</updated>
+    </task>
+    <task id="LOCAL-00057" summary="feat(guide.manage-application-data): start a container with a volume">
+      <created>1564287593219</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1564287593219</updated>
+    </task>
+    <task id="LOCAL-00058" summary="feat(guide.manage-application-data): start a service with volumes">
+      <created>1564365286615</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1564365286615</updated>
+    </task>
+    <task id="LOCAL-00059" summary="feat(guide.manage-application-data): populate a volume using a container">
+      <created>1564365890107</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1564365890107</updated>
+    </task>
+    <task id="LOCAL-00060" summary="feat(guide.manage-application-data): use a readonly volume">
+      <created>1564378369931</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1564378369931</updated>
+    </task>
+    <task id="LOCAL-00061" summary="feat(guide.manage-application-data): share data among machines">
+      <created>1564378690805</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1564378690805</updated>
+    </task>
+    <task id="LOCAL-00062" summary="feat(guide.manage-application-data): backup a container">
+      <created>1564388166569</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1564388166569</updated>
+    </task>
+    <task id="LOCAL-00063" summary="feat(guide.manage-application-data): backup a container">
+      <created>1564388908622</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1564388908622</updated>
+    </task>
+    <task id="LOCAL-00064" summary="feat(guide.manage-application-data): backup a containersdsf">
+      <created>1564388968408</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1564388968408</updated>
+    </task>
+    <task id="LOCAL-00065" summary="feat(guide.manage-application-data): restore container from backup">
+      <created>1564392831149</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1564392831149</updated>
+    </task>
+    <task id="LOCAL-00066" summary="feat(guide.manage-application-data): remove volumes">
+      <created>1564393177048</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1564393177048</updated>
+    </task>
+    <task id="LOCAL-00067" summary="feat(guide.manage-application-data): `-v`, `--mount`">
+      <created>1564395153321</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1564395153321</updated>
+    </task>
+    <task id="LOCAL-00068" summary="feat(guide.manage-application-data): start a container with a bind mount">
+      <created>1564395842850</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1564395842850</updated>
+    </task>
+    <task id="LOCAL-00069" summary="feat(guide.manage-application-data): mount into a non-empty directory on the container">
+      <created>1564397617561</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1564397617561</updated>
+    </task>
+    <task id="LOCAL-00070" summary="feat(guide.manage-application-data): readonly bind mount">
+      <created>1564653494511</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1564653494511</updated>
+    </task>
+    <task id="LOCAL-00071" summary="feat(guide.manage-application-data): configure bind propagation">
+      <created>1564653642975</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1564653642975</updated>
+    </task>
+    <task id="LOCAL-00072" summary="feat(guide.manage-application-data): configure the selinux label">
+      <created>1564653830004</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1564653830004</updated>
+    </task>
+    <task id="LOCAL-00073" summary="feat(guide.manage-application-data): tmpfs mounts">
+      <created>1564654021127</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1564654021127</updated>
+    </task>
+    <task id="LOCAL-00074" summary="feat(guide.configure-networking): bridge networking tutorial">
+      <created>1564994155890</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1564994155890</updated>
+    </task>
+    <task id="LOCAL-00075" summary="feat(guide.configure-networking): docker network ls">
+      <created>1564994849779</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1564994849779</updated>
+    </task>
+    <task id="LOCAL-00076" summary="feat(guide.configure-networking): use the default bridge network">
+      <created>1564995995389</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1564995995389</updated>
+    </task>
+    <task id="LOCAL-00077" summary="feat(guide.configure-networking): use user-defined bridge network">
+      <created>1564998641367</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1564998641367</updated>
+    </task>
+    <task id="LOCAL-00078" summary="feat(product-manual.docker-compose): preserve volume data">
+      <created>1565011354973</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1565011354973</updated>
+    </task>
+    <task id="LOCAL-00079" summary="feat(product-manual.docker-compose): variables">
+      <created>1565011746233</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1565011746233</updated>
+    </task>
+    <task id="LOCAL-00080" summary="feat(product-manual.docker-compose): install docker compose">
+      <created>1565083950969</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1565083950969</updated>
+    </task>
+    <task id="LOCAL-00081" summary="feat(product-manual.docker-compose): getting-started: setup">
+      <created>1565087837751</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1565087837751</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/doc/product-manuals/docker-compose/getting-started/app-20/src/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="feat(guide.manage-application-data): `docker volume`" />
+    <MESSAGE value="feat(guide.manage-application-data): start a container with a volume" />
+    <MESSAGE value="feat(guide.manage-application-data): start a service with volumes" />
+    <MESSAGE value="feat(guide.manage-application-data): populate a volume using a container" />
+    <MESSAGE value="feat(guide.manage-application-data): use a readonly volume" />
+    <MESSAGE value="feat(guide.manage-application-data): share data among machines" />
+    <MESSAGE value="feat(guide.manage-application-data): backup a container" />
+    <MESSAGE value="feat(guide.manage-application-data): backup a containersdsf" />
+    <MESSAGE value="feat(guide.manage-application-data): restore container from backup" />
+    <MESSAGE value="feat(guide.manage-application-data): remove volumes" />
+    <MESSAGE value="feat(guide.manage-application-data): `-v`, `--mount`" />
+    <MESSAGE value="feat(guide.manage-application-data): start a container with a bind mount" />
+    <MESSAGE value="feat(guide.manage-application-data): mount into a non-empty directory on the container" />
+    <MESSAGE value="feat(guide.manage-application-data): readonly bind mount" />
+    <MESSAGE value="feat(guide.manage-application-data): configure bind propagation" />
+    <MESSAGE value="feat(guide.manage-application-data): configure the selinux label" />
+    <MESSAGE value="feat(guide.manage-application-data): tmpfs mounts" />
+    <MESSAGE value="feat(guide.configure-networking): bridge networking tutorial" />
+    <MESSAGE value="feat(guide.configure-networking): docker network ls" />
+    <MESSAGE value="feat(guide.configure-networking): use the default bridge network" />
+    <MESSAGE value="feat(guide.configure-networking): use user-defined bridge network" />
+    <MESSAGE value="feat(product-manual.docker-compose): preserve volume data" />
+    <MESSAGE value="feat(product-manual.docker-compose): variables" />
+    <MESSAGE value="feat(product-manual.docker-compose): install docker compose" />
+    <MESSAGE value="feat(product-manual.docker-compose): getting-started: setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(product-manual.docker-compose): getting-started: setup" />
+    <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="MarkdownNavigator.LinkMap.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
