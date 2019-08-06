@@ -33,3 +33,10 @@
 `docker-compose -f D:\proj\git\luotaoyeah\learning-docker\src\doc\product-manuals\docker-compose\getting-started\app-20\docker-compose.yml up -d --build`
 
 ## [Step 5: Edit The Compose File To Add A Bind Mount](https://docs.docker.com/compose/gettingstarted/#step-5-edit-the-compose-file-to-add-a-bind-mount)
+
+## [Step 8: Experiment With Some Other Commands](https://docs.docker.com/compose/gettingstarted/#step-8-experiment-with-some-other-commands)
+
+- 使用 `docker-compose ps` 命令来查看当前的 compose 中运行的 container,
+  可以使用 `docker-compose -f some-other-compose.yml ps` 来查看某个指定的 compose 中运行的 container
+
+- 使用 `docker-compose run app-20 env` 命令, 在某个 service 上执行一个一次性的命令
