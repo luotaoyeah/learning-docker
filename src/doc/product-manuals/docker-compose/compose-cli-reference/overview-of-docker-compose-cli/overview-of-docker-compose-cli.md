@@ -21,3 +21,9 @@
 如果 compose 文件的名称不是 `docker-compose.yml`, 或者该文件不在当前目录, 则需要使用 `-f` 来指定该文件的地址
 
 也可以通过环境变量 `COMPOSE_FILE` 来指定 compose 文件的地址
+
+## [Use `-p` To Specify A Project Name](https://docs.docker.com/compose/reference/overview/#use--p-to-specify-a-project-name)
+
+默认的 project 名称为当前的目录名称
+
+可以通过 `-p <PROJECT_NAME>` 来指定, 也可以通过环境变量 `COMPOSE_PROJECT_NAME` 来指定
