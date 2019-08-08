@@ -15,3 +15,9 @@
 
 默认情况下, `docker-compose` 会在当前目录以及上级目录寻找 2 个文件: `docker-compose.yml` 和 `docker-compose.override.yml`,
 类似于: `docker-compose -f docker-compose.yml -f docker-compose.override.yml`
+
+### [Specifying A Path To A Single Compose File](https://docs.docker.com/compose/reference/overview/#specifying-a-path-to-a-single-compose-file)
+
+如果 compose 文件的名称不是 `docker-compose.yml`, 或者该文件不在当前目录, 则需要使用 `-f` 来指定该文件的地址
+
+也可以通过环境变量 `COMPOSE_FILE` 来指定 compose 文件的地址
