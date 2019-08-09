@@ -9,3 +9,4 @@
     - TODO [bundle](./docker-compose/compose-cli-reference/bundle/bundle.md)
     - TODO [config](./docker-compose/compose-cli-reference/bundle/bundle.md)
     - [config](./docker-compose/compose-cli-reference/config/config.md)
+    - [up](./docker-compose/compose-cli-reference/up/up.md)
