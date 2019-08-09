@@ -10,4 +10,5 @@
     - TODO [config](./docker-compose/compose-cli-reference/bundle/bundle.md)
     - [config](./docker-compose/compose-cli-reference/config/config.md)
     - [down](./docker-compose/compose-cli-reference/down/down.md)
+    - TODO [events](./docker-compose/compose-cli-reference/events/events.md)
     - [up](./docker-compose/compose-cli-reference/up/up.md)
