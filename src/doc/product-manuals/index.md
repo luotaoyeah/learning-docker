@@ -7,8 +7,9 @@
     - TODO [CLI Environment Variables](./docker-compose/compose-cli-reference/cli-environment-variables/cli-environment-variables.md)
     - [build](./docker-compose/compose-cli-reference/build/build.md)
     - TODO [bundle](./docker-compose/compose-cli-reference/bundle/bundle.md)
-    - TODO [config](./docker-compose/compose-cli-reference/bundle/bundle.md)
     - [config](./docker-compose/compose-cli-reference/config/config.md)
+    - ~~create~~
     - [down](./docker-compose/compose-cli-reference/down/down.md)
     - TODO [events](./docker-compose/compose-cli-reference/events/events.md)
+    - [pull](./docker-compose/compose-cli-reference/pull/pull.md)
     - [up](./docker-compose/compose-cli-reference/up/up.md)
