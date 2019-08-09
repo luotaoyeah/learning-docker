@@ -1,0 +1,6 @@
+version: '3.7'
+
+services:
+  app-22:
+    # build 可以是一个字符串, 表示的是 build context, 并且 Dockerfile 必须位于该目录中
+    build: .
