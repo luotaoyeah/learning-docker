@@ -6,3 +6,4 @@
     - [Overview Of docker-compose CLI](./docker-compose/compose-cli-reference/overview-of-docker-compose-cli/overview-of-docker-compose-cli.md)
     - TODO [CLI Environment Variables](./docker-compose/compose-cli-reference/cli-environment-variables/cli-environment-variables.md)
     - [build](./docker-compose/compose-cli-reference/build/build.md)
+    - TODO [bundle](./docker-compose/compose-cli-reference/bundle/bundle.md)
