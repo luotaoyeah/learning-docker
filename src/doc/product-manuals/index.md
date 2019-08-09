@@ -16,4 +16,5 @@
     - [rm](./docker-compose/compose-cli-reference/rm/rm.md)
     - [start](./docker-compose/compose-cli-reference/start/start.md)
     - [stop](./docker-compose/compose-cli-reference/stop/stop.md)
+    - [top](./docker-compose/compose-cli-reference/top/top.md)
     - [up](./docker-compose/compose-cli-reference/up/up.md)
