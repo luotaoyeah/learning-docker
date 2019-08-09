@@ -12,4 +12,5 @@
     - [down](./docker-compose/compose-cli-reference/down/down.md)
     - TODO [events](./docker-compose/compose-cli-reference/events/events.md)
     - [pull](./docker-compose/compose-cli-reference/pull/pull.md)
+    - [restart](./docker-compose/compose-cli-reference/restart/restart.md)
     - [up](./docker-compose/compose-cli-reference/up/up.md)
