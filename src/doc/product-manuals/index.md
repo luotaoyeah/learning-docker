@@ -15,4 +15,5 @@
     - [restart](./docker-compose/compose-cli-reference/restart/restart.md)
     - [rm](./docker-compose/compose-cli-reference/rm/rm.md)
     - [start](./docker-compose/compose-cli-reference/start/start.md)
+    - [stop](./docker-compose/compose-cli-reference/stop/stop.md)
     - [up](./docker-compose/compose-cli-reference/up/up.md)
