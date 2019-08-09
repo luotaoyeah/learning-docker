@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  app-21.mongodb:
+    image: mongo:4.0.11
+    volumes:
+      - app-21-mongodb-volume:/data/db
+    networks:
+      - app-21-network
+
+volumes:
+  app-21-mongodb-volume:
+
+networks:
+  app-21-network:
